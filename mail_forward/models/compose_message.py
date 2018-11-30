@@ -71,8 +71,10 @@ class MailForwardComposeMessage(models.TransientModel):
                 self.res_id and
                 self.attachment_ids):
             for attachment in self.attachment_ids:
-                attachment.res_model = self.model
-                attachment.res_id = self.res_id
+                attachment.write({
+                    'res_model': self.model,
+                    'res_id': self.res_id,
+                })
 
         return result
 
