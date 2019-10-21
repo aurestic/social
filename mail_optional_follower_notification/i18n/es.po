@@ -1,20 +1,21 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # * mail_optional_follower_notification
-# 
+#
 # Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: social (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-26 02:42+0000\n"
+"POT-Creation-Date: 2017-04-30 10:21+0000\n"
 "PO-Revision-Date: 2016-05-25 14:10+0000\n"
 "Last-Translator: <>\n"
-"Language-Team: Spanish (http://www.transifex.com/oca/OCA-social-8-0/language/es/)\n"
+"Language-Team: Spanish (http://www.transifex.com/oca/OCA-social-8-0/language/"
+"es/)\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: mail_optional_follower_notification
@@ -42,4 +43,4 @@ msgstr "Notificaciones"
 #. module: mail_optional_follower_notification
 #: field:mail.compose.message,notify_followers:0
 msgid "Notify followers"
-msgstr ""
+msgstr "Notificar a seguidores"

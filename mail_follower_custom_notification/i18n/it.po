@@ -1,20 +1,21 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # * mail_follower_custom_notification
-# 
+#
 # Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: social (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-25 18:06+0000\n"
-"PO-Revision-Date: 2016-11-25 14:57+0000\n"
+"POT-Creation-Date: 2017-01-07 07:31+0000\n"
+"PO-Revision-Date: 2017-01-13 09:23+0000\n"
 "Last-Translator: OCA Transbot <transbot@odoo-community.org>\n"
-"Language-Team: Italian (http://www.transifex.com/oca/OCA-social-8-0/language/it/)\n"
+"Language-Team: Italian (http://www.transifex.com/oca/OCA-social-8-0/language/"
+"it/)\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: mail_follower_custom_notification
@@ -141,8 +142,8 @@ msgstr "Ultimo aggiornamento il"
 #. module: mail_follower_custom_notification
 #: help:mail.message.subtype,custom_notification_mail:0
 msgid ""
-"Leave empty to use the on the partner's form, set to \"Force yes\" to always"
-" send messages of this type via email, and \"Force no\" to never send "
+"Leave empty to use the on the partner's form, set to \"Force yes\" to always "
+"send messages of this type via email, and \"Force no\" to never send "
 "messages of type via email"
 msgstr ""
 
@@ -166,7 +167,7 @@ msgstr ""
 #. module: mail_follower_custom_notification
 #: field:mail.message.subtype,custom_notification_model_ids:0
 msgid "Models"
-msgstr ""
+msgstr "Modelli"
 
 #. module: mail_follower_custom_notification
 #. openerp-web
