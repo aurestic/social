@@ -92,14 +92,26 @@ class MailTrackingEmail(models.Model):
         string="Tracking events", comodel_name='mail.tracking.event',
         inverse_name='tracking_email_id', readonly=True)
 
+    @api.multi
+    def write(self, vals):
+        if vals.get('state') in self.env['mail.message'].get_failed_states():
+            self.mapped('mail_message_id').write({
+                'mail_tracking_needs_action': True,
+            })
+        super().write(vals)
+
     @api.model
     def email_is_bounced(self, email):
-        if email:
-            return self.search_count([
-                ('recipient_address', '=', email.lower()),
-                ('state', 'in', ('error', 'rejected', 'spam', 'bounced')),
-            ]) > 0
-        return False
+        if not email:
+            return False
+        res = self._email_last_tracking_state(email)
+        return res and res[0].get('state', '') in {'rejected', 'error',
+                                                   'spam', 'bounced'}
+
+    @api.model
+    def _email_last_tracking_state(self, email):
+        return self.search_read([('recipient_address', '=', email.lower())],
+                                ['state'], limit=1, order='time DESC')
 
     @api.model
     def email_score_from_email(self, email):
