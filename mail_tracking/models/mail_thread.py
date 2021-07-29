@@ -104,5 +104,6 @@ class MailThread(models.AbstractModel):
                     'widget': 'mail_failed_message',
                 })
                 nodes[0].addprevious(field_failed_messages)
+                res['fields'].update(self.fields_get('failed_message_ids'))
         res['arch'] = etree.tostring(doc, encoding='unicode')
         return res
