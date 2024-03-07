@@ -1,6 +1,6 @@
 # generated from manifests external_dependencies
 cairosvg
-cryptography<37
+cryptography==3.4.8
 extract_msg
 lottie
 premailer
